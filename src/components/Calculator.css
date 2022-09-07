@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.cacl {
+  background-color: lightsalmon;
+  padding: 1rem;
+  width: 15rem;
+  transform: scale(1.5);
+}
+
+.cacl .result {
+  margin-bottom: 0.5rem;
+}
+
+.cacl .result input {
+  padding: 0.6rem 0.3rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f1faeb;
+  border: none;
+  text-align: end;
+  box-shadow: 0rem 0.2rem 0rem indianred;
+}
+
+.cacl .result input:focus {
+  outline: none;
+}
+
+.cacl .calc-func ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cacl .calc-func ul li {
+  width: 3rem;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+  transition: all 0.3s;
+}
+
+.cacl .calc-func ul li button {
+  border: none;
+  background-color: #efefef;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  border: 2px solid indianred;
+  box-shadow: 0rem 0.2rem 0.1rem indianred;
+}
+
+.cacl .calc-func ul li:active{
+  transform: scale(0.9);
+}
+
+.cacl .calc-func ul li:last-child button{
+  background-color: palegreen;
+}
+
+.cacl .calc-func ul:last-child li:first-child button {
+  background-color: #80a6bb;
+  color: #efefef;
+  font-weight: bold;
+}
